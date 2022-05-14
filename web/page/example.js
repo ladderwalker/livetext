@@ -6,8 +6,9 @@ function initExample() {
 var menItm = `
 	<tr><td width=1><input type=submit onclick="ShowHideEvent( 'Example' );" value="Example"></td><td>
 	<div id=Example class="collapsible">
-	<p>I'm an example feature found in ./web/page/feature.example.js.</p>
-	<input type=button id=InfoBtn value="Display Info"><br>
+	<p>Enter message</p>
+	<input type="text" id="myText" value="Some text...">
+	<input type=button id=InfoBtn value="send"><br>
 	<p id=InfoDspl>&nbsp;</p>
 	</div>
 	</td></tr>

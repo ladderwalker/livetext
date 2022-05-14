@@ -3,6 +3,8 @@
 #include <commonservices.h>
 #include "esp82xxutil.h"
 
+extern char *texBuffa = " ";
+
 int ICACHE_FLASH_ATTR CustomCommand(char * buffer, int retsize, char *pusrdata, unsigned short len) {
 	char * buffend = buffer;
 
@@ -22,7 +24,11 @@ int ICACHE_FLASH_ATTR CustomCommand(char * buffer, int retsize, char *pusrdata, 
 			os_printf( "%s\n", buffend );
 			return len-2;
 		break;
+		case 'D': case 'd':
+			
 	}
 
+	
+	
 	return -1;
 }
